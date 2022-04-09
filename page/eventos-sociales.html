@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- cabeza de la pagina - no visible en pantalla -->
+
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Mariana Sequeira Fotos</title>
+   <!-- google font -->
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+   <!-- icono hamburguesa -->
+   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
+   <!-- link a estilos css -->
+   <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<!-- cuerpo de la pagina - visible en pantalla-->
+
+<body>
+
+   <!-- layout -->
+
+   <div id="grid-area-photos">
+
+      <!-- barra de navegacion -->
+
+      <header id="header">
+
+         <!-- titulo - home  -->
+
+         <a href="#" title="Portada">
+            <h1 class="logo">MARIANA&nbsp;SEQUEIRA</h1>
+         </a>
+
+         <!-- icono hamburguesa -->
+
+         <input type="checkbox" id="menu-bar">
+         <label for="menu-bar">
+            <i class="fas fa-bars"></i>
+         </label>
+
+         <!-- menu de navegacion -->
+
+         <nav class="nav-bar">
+
+            <!-- categorias - menu de navegacion -->
+
+            <ul class="main-menu">
+               <li><a href="../index.html">inicio</a></li>
+               <li><a href="../page/portfolio.html">portfolio&nbsp;+</a> <!-- momentaneamenta es clickeable - luego dejara de serlo y posando el cursor desplegara listado-->
+                  <ul>
+                     <li><a href="../page/coberturas.html">coberturas</a></li>
+                     <li><a href="../page/cotidianas.html">cotidianas</a></li>
+                     <li><a href="../page/emprendimientos.html">emprendimientos</a></li>
+                     <li>eventos sociales</li>
+                     <li><a href="../page/memoria-ddhh.html">memoria dd.hh.</a></li>
+                     <li><a href="../page/oscuridad.html">oscuridad</a></li>
+                     <li><a href="../page/paisajes.html">paisajes</a></li>
+                     <li><a href="../page/retratos.html">retratos</a></li>
+                  </ul>
+               </li>
+               <li id="move"><a href="../page/bio.html">bio</a></li>
+               <li><a href="../page/contacto.html">contacto</a></li>
+            </ul>
+            
+            <!-- iconos redes sociales -->
+
+            <div class="network-container">
+               <div class="network">
+                  <a href="https://www.instagram.com/" target="_blank">
+                     <img src="../img/01-redes-sociales/instagram.png" alt="instagram">
+                  </a>
+               </div>
+               <div class="network">
+                  <a href="https://ar.pinterest.com/" target="_blank">
+                     <img src="../img/01-redes-sociales/pinterest.png" alt="pinteres">
+                  </a>
+               </div>
+            </div>
+         </nav>
+
+      </header>
+   
+      <!-- seccion principal -->
+      
+      <section id="section-photos"> <!-- flechas arriba/abajo - aizquierda/derecaha? - titulo apareces segundos mas tarde que la imagen? - con mas conocimientos evaluar opciones de navegacion -->
+         <div class="container y mandatory-scroll-snapping">
+            <article class="photos">
+                  <img src="../img/02-fotos/eventos-sociales/casamiento-noe-y-ale/casamiento-noe-y-ale-3.jpg" width="100%" alt="Noe y Ale">
+                  <h2>Noe y Ale</h2>
+            </article>
+            <article class="photos">
+                  <img src="../img/02-fotos/eventos-sociales/casamiento-noe-y-ale/casamiento-noe-y-ale-4.jpg" width="100%" alt="Noe y Ale">
+                  <h2>Noe y Ale</h2>
+            </article>
+            <article class="photos">
+                  <img src="../img/02-fotos/eventos-sociales/casamiento-noe-y-ale/casamiento-noe-y-ale-1.jpg" width="100%" alt="Noe y Ale">
+                  <h2>Noe y Ale</h2>
+            </article>
+            <article class="photos">
+                  <img src="../img/02-fotos/eventos-sociales/casamiento-noe-y-ale/casamiento-noe-y-ale-5.jpg" width="100%" alt="Noe y Ale">
+                  <h2>Noe y Ale</h2>
+            </article>
+         </div>
+      </section>
+
+   </div>
+
+</body>
+</html>
