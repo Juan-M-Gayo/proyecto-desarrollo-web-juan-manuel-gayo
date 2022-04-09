@@ -13,6 +13,10 @@ Todo relacionado con la ortografia, se corregira para la entrega final del proye
 - Linea 17 y 18 (se introdujo link de animaciones dentro del HEAD)
 - Linea 38 (se agrego "id" y se modifico "class")
 
+## Especifico para index
+
+- Linea 117 (se cambio fotografia)
+
 ## Especifico de la pagina memoria-ddhh
 
 - Linea 94 a 109 (se cambio el orden de las imagenes)
