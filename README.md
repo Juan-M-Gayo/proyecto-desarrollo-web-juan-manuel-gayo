@@ -27,11 +27,11 @@ Todo relacionado con la ortografia, se corregira para la entrega final del proye
 
 # CSS
 
-## HEADER
+## Header
 
 - Linea 105, 115, 123 y 131 (se reeplazo ".logo" por "#logo")
 
-## MENU
+## Menu
 
 - Linea 140 (se introdujo comentario)
 - Linea 142 a 156 (se introdujo ".nav-bar li a:after {}")
@@ -39,18 +39,18 @@ Todo relacionado con la ortografia, se corregira para la entrega final del proye
 - Linea 202 (se introdujo "position: relative;")
 - Linea 205 a 207 (se elimino ".nav-bar .main-menu a:hover {}")
 
-## ESPECIFICO PARA PAGINA PORTFOLIO
+## Especifico para pagina portfolio
 
 - Linea 453 (se introdujo comentario)
 - Linea 459 (se introdujo "filter: greyscale (0);")
 - Linea 462 a 467 (se introdujo ".galery .galery-item img:hover {}")
 
-## ESPECIFICO PARA PAGINA BIO
+## Especifico para pagina bio
 
 - Linea 513 (se introdujo comentario)
 - Linea 515 a 523 (se introdujo ".imagen-bio:after {}")
 
-## ESPECIFICO PARA LA PAGINA CONTACTO
+## Especifico para pagina contacto
 
 - Linea 590 (se introdujo "font-family: 'Montserrat';")
 - Linea 612 (se introdujo "font-family: 'Montserrat';")
@@ -65,3 +65,48 @@ Todo relacionado con la ortografia, se corregira para la entrega final del proye
 - Linea 708 a 714 (se introdujo "@media (max-width: 360px) {}")
 - Linea 716 a 720 (se introdujo ".form input[type="submit"]:hover {}")
 - Linea 722 a 725 (se introdujo ".form input[type="submit"]:focus {}")
+
+-- Version 0.2 - Desafio entregable 05 y complementario 02 --
+
+# CARPETA IMG
+
+- se agregan dentro de la carpeta coberturas (campana-frente-de-todos / mascotas-de-la-ciudad / river-eterno)
+
+# CARPETA PAGE
+
+- se crea pagina (coberturas-danone-argentina.html)
+- se crea pagina (frente-de-todos.html)
+- se crea pagina (mascotas-de-la-ciudad.html)
+- se crea pagina (river-eterno.html)
+- se elimina pagina (portfolio.html)
+
+# HTML
+
+- se formatean todas las paginas y dentro del <head> se reemplaza <link> a icono hamburguesa por <link> a bootstrap.
+- se agregan 2 <script></script> de bootstrap antes del cierre del </body>
+- se agrega un <header> donde se coloca un <nav> que se trae de bootstrap y se modifica, y adapta, a la estructura y diseño del proyecto.
+
+## Especifico para pagina index
+
+- se agrega un <main> donde se coloca un carrusel (automatico) traido de bootstrap y el mismo se modifica, y adapta, a la estructura y diseño del proyecto .
+
+## Especifico para pagina bio
+
+- se agrega un <main> donde se coloca una tarjeta traida de bootstrap y la misma se modifica, y adapta, a la estructura y diseño del proyecto.
+
+## Especifico para pagina contacto
+
+- se agrega un <main> y se crea un formulario de contacto utilizando las herramientas de bootstrap.
+
+## Especifico para pagina coberturas
+
+- se agrega un <main> y se importa el grid-galery de la actualmente eliminada pagina portfolio.html. La misma se modifica, y adapta, al diseño y la estructura actual del proyecto.
+
+## Especifico para el resto de las paginas
+
+- se agrega un <main> donde se coloca un carrusel (no automatico) y el mismo se modifica, y adapta, a la estructura y diseño del proyecto.
+
+# CSS
+
+- Se formatea y se le da estilos a la nueva estructura de la pagina para que cumpla con la estructura y el diseño original del proyecto. Para ello se utilizan todas las herramientas aprendidas hasta ahora dentro del curso y otras aprendidas a traves de tuturiales y material complementario de la WEB.
+
