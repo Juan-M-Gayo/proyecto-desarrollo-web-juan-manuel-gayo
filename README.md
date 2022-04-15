@@ -4,7 +4,7 @@ Aca se subiran periodicamente modificaciones solicitadas para Desafios entregabl
 
 Todo relacionado con la ortografia, se corregira para la entrega final del proyecto
 
--- Version 0.1 - Desafio entregable 04 --
+- * - Version 0.1 - Desafio entregable 04 
 
 # HTML
 
@@ -66,7 +66,7 @@ Todo relacionado con la ortografia, se corregira para la entrega final del proye
 - Linea 716 a 720 (se introdujo ".form input[type="submit"]:hover {}")
 - Linea 722 a 725 (se introdujo ".form input[type="submit"]:focus {}")
 
--- Version 0.2 - Desafio entregable 05 y complementario 02 --
+- * - Version 0.2 - Desafio entregable 05 y complementario 02
 
 # CARPETA IMG
 
@@ -110,3 +110,34 @@ Todo relacionado con la ortografia, se corregira para la entrega final del proye
 
 - Se formatea y se le da estilos a la nueva estructura de la pagina para que cumpla con la estructura y el diseño original del proyecto. Para ello se utilizan todas las herramientas aprendidas hasta ahora dentro del curso y otras aprendidas a traves de tuturiales y material complementario de la WEB.
 
+# EXTRA
+
+- Se chequea el correcto funcionamiento de todas las secciones y su estructura en general. Tambien se corrobora que el proyecto sigue funcionando como Full Responsive. 
+
+- * - Version 0.3 - Pre-entrega 02
+
+# HTML
+
+## Comun a todas las paginas
+
+- Linea 19 (se introdujo un comentario dentro del HEAD)
+- Linea 20 (se introdujo link de iconosBootstrap dentro del HEAD)
+- Linea 29 (se agrego "id")
+
+## Comun a todas las paginas (salvo index, bio, contacto)
+
+- se introdujo dentro de <button> un icono de bootstrap <i class="bi bi-chevron-left"></i> y <i class="bi bi-chevron-right"></i>
+
+# CSS
+
+- se realiza una limpieza del codigo
+- se ordenan los estilos
+- se eliminan las animaciones a partir de mobile
+- se retoca, mejorando la estetica, de la "card" dentro de bio.html
+- se retoca, mejorando la estetica, del "form" dentro de contacto.html
+- se le da estilos a los iconos del carrusel 
+- se introduce animacion, para la seleccion de categoria, dentro de coberturas.html
+
+# EXTRA
+
+- Se chequea el correcto funcionamiento de todas las secciones y su estructura en general. Tambien se corrobora que el proyecto sigue funcionando como Full Responsive y que no presenta errores en ninguna de sus medidas. 
