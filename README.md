@@ -4,7 +4,9 @@ Aca se subiran periodicamente modificaciones solicitadas para Desafios entregabl
 
 Todo relacionado con la ortografia, se corregira para la entrega final del proyecto
 
+#
 - * - Version 0.1 - Desafio entregable 04 
+#
 
 # HTML
 
@@ -66,11 +68,13 @@ Todo relacionado con la ortografia, se corregira para la entrega final del proye
 - Linea 716 a 720 (se introdujo ".form input[type="submit"]:hover {}")
 - Linea 722 a 725 (se introdujo ".form input[type="submit"]:focus {}")
 
+#
 - * - Version 0.2 - Desafio entregable 05 y complementario 02
+#
 
 # CARPETA IMG
 
-- se agregan dentro de la carpeta coberturas (campana-frente-de-todos / mascotas-de-la-ciudad / river-eterno)
+- se agregan dentro de la carpeta "02-fotos' y a su vez, dentro de la carpeta "coberturas" (campana-frente-de-todos / mascotas-de-la-ciudad / river-eterno)
 
 # CARPETA PAGE
 
@@ -114,7 +118,9 @@ Todo relacionado con la ortografia, se corregira para la entrega final del proye
 
 - Se chequea el correcto funcionamiento de todas las secciones y su estructura en general. Tambien se corrobora que el proyecto sigue funcionando como Full Responsive. 
 
+#
 - * - Version 0.3 - Pre-entrega 02
+#
 
 # HTML
 
@@ -141,3 +147,40 @@ Todo relacionado con la ortografia, se corregira para la entrega final del proye
 # EXTRA
 
 - Se chequea el correcto funcionamiento de todas las secciones y su estructura en general. Tambien se corrobora que el proyecto sigue funcionando como Full Responsive y que no presenta errores en ninguna de sus medidas. 
+
+#
+- * - Version 0.4 - Desafio entregable 06
+#
+
+# CARPETA IMG
+
+- se agregan dentro de la carpeta "02-fotos", las carpetas "index" e "inicio".
+
+# HTML
+
+## Comun a todas las paginas
+
+- se corrigen errores algunos de escritura.
+
+# CSS
+
+- se renombra bajo el nombre de "stilo.css" para luego migrar el contenido a "style.scss".
+- una vez migrado, se elimina el archivo "stilo.css" utilizado hasta la fecha.
+- se recibe archivo "style.css" creado actumaticamente a partir de contenido del archivo "style.scss".
+
+# SASS
+
+- se crea carpeta sass.
+- se crea archivo "style.css" y se copia dentro de el, el contenido perteneciente al archivo "styles.css" utilizado hasta el momento y recientemente renombrado bajo el nombre de "stilo.css"
+- se pasa de escritura "css" a escritura "scss" todo el contenido del archivo
+- se crean los archivos "_bio.scss", "_coberturas.scss", "_contacto.scss", "_default.scss", "_header.scss", "_mainfotos.scss" y "_reset.scss". Se pegan dentro de ellas la estructura correspondiente que se corto del archivo "style.scss"
+- se crea el archivo "_vars.scss" y dentro del mismo, se introducen etiquetas para los distintos colores y colores de fondo utilizados dentro del documento.
+- se importan dentro del archivo "style.scss" los archivos "_vars.scss", "_bio.scss", "_coberturas.scss", "_contacto.scss", "_default.scss", "_header.scss", "_mainfotos.scss" y "_reset.scss".
+
+# EXTRA
+
+- Se chequea el correcto funcionamiento de todas las secciones y su estructura en general. Tambien se corrobora que el proyecto sigue funcionando como Full Responsive y que no presenta errores en ninguna de sus medidas. 
+- se corrige escritura dentro del archivo README.
+
+
+

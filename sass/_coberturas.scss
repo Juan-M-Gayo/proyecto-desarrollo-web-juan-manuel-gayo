@@ -1,0 +1,57 @@
+/* ESPECIFICO PARA PAGINA COBERTURAS*/
+.galery {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    @media (max-width: 650px) {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .galery-item {
+        position: relative;
+        height: calc((100vh - 3.75rem)/2);
+        @media (max-width: 650px) {
+            height: calc((100vh - 3.75rem)/4);
+        }
+        a::before {
+            display: flex;
+            position: absolute;
+            align-items: center;
+            justify-content: center;
+            top: 3rem;
+            bottom: 3rem;
+            left: 3rem;
+            right: 3rem;
+            padding: 3rem;
+            background-color: $TColorLightBlue;
+            font-size: 1.375rem;
+            text-align: center;
+            color: $ColorWhite;
+            border-radius: 1.5625rem;
+            /* animacion aparicion de categoria */
+            transform: scale(0);
+            transition: transform .4s;
+            @media (max-width: 992px) {
+                transform: scale(1);
+            }
+        }
+        a:hover::before {
+            /* animacion aparicion de categoria */
+            transform: scale(1);
+        }
+        .item-01::before {
+            content: "Danone Argentina";
+        }
+        .item-02::before {
+            content: "Frente de Todos";
+        }
+        .item-03::before {
+            content: "Mascotas de la Ciudad";
+        }
+        .item-04::before {
+            content: "River Eterno";
+        }
+        img {
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+}

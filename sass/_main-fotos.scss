@@ -1,0 +1,47 @@
+/* ESPECIFICO PARA PAGINAS DE FOTOS */
+.carousel {
+    margin-top: -3.75rem;
+    &-item {
+        img {
+            height: 100vh;
+            object-fit: cover;
+        }
+        h2 {
+            position: absolute;
+            bottom: 0.625rem;
+            padding: 0.5rem 2rem 0.5rem 2rem;
+            background-color: $TColorDarkGrey;
+            font-size: 1.5rem;
+            color: $ColorWhite;
+            border-radius: 0 1.5625rem 1.5625rem 0;
+            @media (max-width: 992px) {
+                font-size: 1.2rem;
+                margin-right: 2rem;
+            }
+        }    
+    }
+    &-control-prev {
+        .bi-chevron-left {
+            font-size: 3.75rem;
+            color: $ColorMagenta;
+            @media (max-width: 992px) {
+                font-size: 3rem;
+            }
+            @media (max-width: 480px) {
+                font-size: 2.4rem;
+            }
+        }        
+    }
+    &-control-next {
+        .bi-chevron-right {
+            font-size: 3.75rem;
+            color: $ColorMagenta;
+            @media (max-width: 992px) {
+                font-size: 3rem;
+            }
+            @media (max-width: 480px) {
+                font-size: 2.4rem;
+            }
+        }
+    }        
+}

@@ -1,0 +1,169 @@
+/* HEADER */
+.navbar {
+    display: flex;
+    position: sticky;
+    top: 0;
+    height: 3.75rem;
+    background-color: $TColorLightGrey;
+    z-index: 100;
+    & &-brand {
+        margin: 0 0.5rem;
+        font-size: 1.625rem;
+        font-weight: 500;
+        letter-spacing: 0.5rem;
+        color:$ColorBlack;
+        @media (max-width: 992px) {
+            font-size: 1.3rem;
+            letter-spacing: 0.4rem;
+        }
+        @media (max-width: 480px) {
+            font-size: 1.04rem;
+            letter-spacing: 0.32rem;
+        }
+        @media (max-width: 360px) {
+            font-size: 0.832rem;
+            letter-spacing: 0.256rem;
+        }
+        &:hover {
+            font-weight: bold;
+            color: $ColorGrey;
+        } 
+    }
+    & &-toggler:focus {
+        box-shadow: none;
+    }
+    & &-toggler-icon {
+        display: inline-block;
+        width: 1.625rem;
+        @media (max-width: 480px) {
+            width: 1.3rem;
+        }
+        @media (max-width: 360px) {
+            width: 1.04rem;
+        }
+    }
+    & &-collapse {
+        margin: 1rem 0.5rem;
+        @media (max-width: 992px) {
+            margin: 0.6rem -0.75rem 0 -1rem;
+            padding: 1rem;
+            background-color: $ColorWhite;
+            border-bottom: 0.5rem solid rgb(245, 245, 245);
+        }
+        .navbar-nav {
+            .nav-item {
+                .nav-link {
+                    position: relative;
+                    width: min-content;
+                    margin: 0.5rem 1rem;
+                    padding: 0;
+                    font-weight: bold;
+                    letter-spacing: 0.1875rem;
+                    color: $ColorGrey;
+                    &:after {
+                        content: "";
+                        position: absolute;
+                        right: 0;
+                        bottom: 0;
+                        left: 0;
+                        height: 0.125rem;
+                        width: 100%;
+                        background-color: $ColorMagenta;
+                        /* animacion subrayado */
+                        transform-origin: right;
+                        transform: scaleX(0);
+                        transition: transform 0.2s ease-in-out;
+                        @media (max-width: 992px) {
+                            display: none;
+                        }
+                    }
+                    &:hover::after {
+                        /* animacion subrayado */
+                        transform-origin: left;
+                        transform: scaleX(1);
+                    }            
+                }
+                .dropdown-menu {
+                    background-color: $TColorLightGrey;
+                    border: none;
+                    .dropdown-item {
+                        position: relative;
+                        width: min-content;
+                        // margin: 0 0.5rem;
+                        // padding: 0.5rem 1rem;
+                        margin: 1rem 1.5rem;
+                        padding: 0;                
+                        font-weight: bold;
+                        letter-spacing: 0.1875rem;
+                        color: $ColorGrey;
+                        &:hover {
+                            background-color: transparent;
+                        }
+                        &::after {
+                            content: "";
+                            position: absolute;
+                            right: 0;
+                            bottom: 0;
+                            left: 0;
+                            height: 0.125rem;
+                            width: 100%;
+                            background-color: $ColorMagenta;
+                            /* animacion subrayado */
+                            transform-origin: right;
+                            transform: scaleX(0);
+                            transition: transform 0.2s ease-in-out;
+                            @media (max-width: 992px) {
+                                display: none;
+                            }
+                        }
+                        &:hover::after {
+                            /* animacion subrayado */
+                            transform-origin: left;
+                            transform: scaleX(1);
+                        }
+                        &:active {
+                            color: $ColorGrey;
+                        }                                      
+                    }
+                    .inactive--dropdwn-link {
+                        position: relative;
+                        width: min-content;
+                        margin: 0.5rem 1.5rem;
+                        padding: 0;
+                        font-weight: bold;
+                        letter-spacing: 0.1875rem;
+                        color: $ColorMagenta;
+                        cursor: default;
+                    }
+                }
+            }
+            .inactive-link {
+                margin: 0.5rem 1rem;
+                font-weight: bold;
+                letter-spacing: 0.1875rem;
+                color: $ColorMagenta;
+                cursor: default;
+            }            
+        }
+        .network-container {
+            display: flex;
+            gap: 1.25rem;
+            @media (max-width: 992px) {
+                margin: 0 0.5rem 0 0.5rem;
+            }
+            .network{ 
+                img {
+                    height: 1.625rem;
+                    opacity: 0.4;
+                    @media (max-width: 992px) {
+                        margin-top: .5rem;
+                    }
+                    &:hover {
+                        opacity: 1;
+                        transform: scale(1.3);
+                    }    
+                }  
+            }
+        }
+    }
+}
