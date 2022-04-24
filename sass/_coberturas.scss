@@ -1,4 +1,5 @@
-/* ESPECIFICO PARA PAGINA COBERTURAS*/
+// css línea 374 //
+/* ESPECIFICO PARA PÁGINA COBERTURAS (html línea 100) */
 .galery {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -26,7 +27,7 @@
             text-align: center;
             color: $ColorWhite;
             border-radius: 1.5625rem;
-            /* animacion aparicion de categoria */
+            /* animación aparición de categoria */
             transform: scale(0);
             transition: transform .4s;
             @media (max-width: 992px) {
@@ -34,7 +35,7 @@
             }
         }
         a:hover::before {
-            /* animacion aparicion de categoria */
+            /* animación aparición de categoria */
             transform: scale(1);
         }
         .item-01::before {

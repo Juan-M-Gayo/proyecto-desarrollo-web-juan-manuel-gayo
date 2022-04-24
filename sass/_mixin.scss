@@ -1,0 +1,29 @@
+// mixin
+@mixin sub ($bg) {
+    position: absolute;
+    bottom: 0.625rem;
+    padding: 0.5rem 2rem 0.5rem 1.25rem;
+    background-color: $bg;
+    font-size: 1.5rem;
+    color: $ColorWhite;
+    border-radius: 0 1.5625rem 1.5625rem 0;
+    animation-delay: 0.9s;
+    @media (max-width: 992px) {
+        font-size: 1.2rem;
+        margin-right: 2rem;
+    }
+    @media (max-width: 480px) {
+        font-size: 0.96rem;
+    }
+}
+
+@mixin arrow ($col) {
+    font-size: 3.75rem;
+    color: $col;
+    @media (max-width: 992px) {
+        font-size: 3rem;
+    }
+    @media (max-width: 480px) {
+        font-size: 2.4rem;
+    }
+}

@@ -1,28 +1,25 @@
-/* ESPECIFICO PARA PAGINA BIO */
-.card {
-    margin: 1.25rem;
-    border-radius: 1.375rem;
-    img {
-        border-radius: 1.375rem;
-        border-bottom-left-radius: 0;
-        border-bottom-right-radius: 0;
+// css línea 449 //
+/* ESPECIFICO PARA PÁGINA BIO (html línea 100) */
+@import "map";
+
+.bio-card {
+    @extend .card;
+    background-color: $TColorLightGrey;
+    > img {
+        @extend .card-img;
     }
-    .card-body {
-        .card-title {
-            margin: 1.875rem;
-            font-size: 3.75rem;
-            text-align: center;
+    > div {
+        > h2 {
+            @extend .card-title;
+            color: map-get($map: $colores, $key: title );
         }
-        .card-text {
-            margin-bottom: 2rem;
-            font-size: 1.2rem;
-            font-weight: bold;
-            text-align: center;
-            line-height: 2.5rem;
-            color: $ColorGrey;
-            .text-muted {
-                font-size: 1.5rem;
-            }
-        }     
+        > p {
+            @extend .card-text;
+            color: map-get($map: $colores, $key: texto );
+            > small {
+                @extend .text-sign;
+                color: map-get($map: $colores, $key: sign );
+            }           
+        }  
     }
 }
