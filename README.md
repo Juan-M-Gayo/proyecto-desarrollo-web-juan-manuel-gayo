@@ -267,6 +267,7 @@ Todo lo relacionado con la ortografía, se corregirá para la entrega final del 
 # EXTRA
 
 - Se crea dentro de la carpeta "page", la subcarpeta "Portfolio" y se migran, dentro de la misma, todos los archivos .html menos bio.html y contacto.html.
-- Se crea dentro de la carpeta "Portfolio", la subcarpeta "coberturas" y se migran, dentro de la misma, los archivos coberturas-danone-argentina.html, coberturas-frente-de-todos.html, coberturas-mascotas-de-la-ciudad.html y coberturas-river-eterno.html.
+- Se crea dentro de la carpeta "Portfolio", la subcarpeta "coberturas" y se migran, dentro de la misma, los archivos coberturas-danone-argentina.html, coberturas-frente-de-todos.html,      coberturas-mascotas-de-la-ciudad.html y coberturas-river-eterno.html.
+- se agrega archivo sitemap.xml.
 - Se corrigen todos los enlaces a cada una de las carpetas dentro de todos los archivos HTML.
 - Se controlan todos los archivos HTML, y el archivo CSS, utilizando la herramienta dentro de las páginas de W3C y se corrobora que ningún archivo presenta errores.
