@@ -271,3 +271,70 @@ Todo lo relacionado con la ortografía, se corregirá para la entrega final del 
 - se agrega archivo sitemap.xml.
 - Se corrigen todos los enlaces a cada una de las carpetas dentro de todos los archivos HTML.
 - Se controlan todos los archivos HTML, y el archivo CSS, utilizando la herramienta dentro de las páginas de W3C y se corrobora que ningún archivo presenta errores.
+
+
+
+#
+- * -  ( Version 0.5 - Pre-entrega 03 )
+#
+
+
+
+# CARPETA IMG
+ 
+- Dentro de la carpeta se agrega ícono para utilizarlo como favicon.
+- Se crea la carpeta "04-contacto" y se agregan imágenes
+- Se agregan imágenes dentro de la carpeta "03-bio"
+ 
+# CARPETA PAGE
+ 
+- Se crea la página "inicio.html" y dentro de ella se migra todo el contenido del archivo del archivo "index.html"
+ 
+# HTML
+ 
+- Dentro del archivo "index.html" se crea nueva estructura para que funcione como portada de ingreso. El título "Mariana Sequeira" presente dentro del nav, de todas las páginas, se vincula a este archivo.
+ 
+## Común a todas las páginas
+ 
+- Se agregó dentro del <head> un link favicon con su respectivo icono.
+- Se corrigen todos los errores ortográficos y gramaticales.
+- Se eliminan todos los comentarios, o contenido dentro de los mismos, que dejaron de tener utilidad.
+ 
+## Específico para página bio
+ 
+- Se eliminó la estructura "card" traída de bootstrap.
+- Se creó una estructura parallax y dentro de la misma se introdujeron nuevas imágenes y todos los textos que se encontraban dentro de la estructura "card".
+ 
+## Específico para páginas dentro de coberturas
+ 
+- Se agregó una clase a los subtítulos de las fotos para dentro de los mismos, agregar un vínculo de retroceso a la página "coberturas.html"
+ 
+# SASS
+ 
+- Se crea el archivo "_main-index.scss" y dentro del mismo se le da estilos para la página "index.html"
+- Se eliminan todos los comentarios, o contenido dentro de los mismos, que dejaron de tener utilidad.
+- Se hizo una revisión y limpieza de todos los archivos.
+ 
+## Específico para _contacto.scss
+ 
+- Se modificaron estilos dentro del mismo.
+- Se agregó una imagen de fondo.
+ 
+## Específico para _coberturas.scss
+ 
+- se dio estilo a vínculo dentro de los subtítulos de las imágenes que se encuentran en las páginas dentro de la carpeta "coberturas"
+ 
+## Específico para _bios.scss
+ 
+- Se dan estilos a la nueva estructura parallax creada.
+- Se vincula a "_map.scss".
+ 
+## Específico para _map.scss
+ 
+- Se modifica para que aplique a la estructura dentro del "_bios.scss"
+ 
+# EXTRA
+ 
+- Se chequea el correcto funcionamiento de todas las secciones y su estructura en general. También se corrobora que el proyecto sigue funcionando como Full Responsive y que no presenta errores en ninguna de sus medidas.
+- Se corrige escritura dentro del archivo README.
+- Se sube todo el proyecto a Github y tambien 000webhost.

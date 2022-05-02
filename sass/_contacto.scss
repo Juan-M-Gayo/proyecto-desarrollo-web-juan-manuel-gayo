@@ -1,32 +1,32 @@
-// css línea 495 //
-/* ESPECIFICO PARA PÁGINA CONTACTO (html línea 100) */
+/* ESPECIFICO PARA PÁGINA CONTACTO */
+#contact {
+    background-image: url("../img/04-contacto/fondo-contacto-04.jpg");
+}
 .contact-container {
     margin: 3.125rem;
     h2 {
+        margin-top: 6rem;
         margin-bottom: 4rem;
-        color: $ColorMagenta;
+        color: $ColorWhite;
         text-align: center;
     }
     form {
         padding: 0 1.25rem 1.25rem 1.25rem;
-        background-color: $ColorWhite;
+        background-color: $TColorLightBlue;
         text-align: center;
         border-radius: 1.375rem;
         .form-label {
-            font-size: 1rem;
-        }
-        .form-control {
-            font-size: 1rem;
+            color: $ColorWhite;
         }
         .submit-btn {
-            margin-bottom: 1rem;
+            margin-bottom: 1.5rem;
             .btn-secondary {
                 width: 6.25rem;
                 border: none;
-                background-color: $ColorGrey;
+                background-color: $ColorMagenta;
                 border-radius: 1.25rem;
                 &:hover {
-                    background-color: $ColorMagenta ;
+                    background-color: $ColorGrey;
                 }
             }
         }        

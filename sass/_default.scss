@@ -1,11 +1,10 @@
-// css línea 24 //
 /* DEFAULT */
 html {
-    min-height: 100vh;
     font-size: 16px;
+    .disclaimer {
+        display: none;
+    }
     body {
-        position: relative;
-        background-color: $BodyColor;
         font-family: 'Montserrat';
         color: $ColorBlack;
     }

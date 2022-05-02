@@ -1,25 +1,51 @@
-// css línea 449 //
-/* ESPECIFICO PARA PÁGINA BIO (html línea 100) */
+/* ESPECIFICO PARA PÁGINA BIO */
 @import "map";
 
-.bio-card {
-    @extend .card;
-    background-color: $TColorLightGrey;
-    > img {
-        @extend .card-img;
+.parallax {
+    @extend .parallax-map;
+    @supports (-webkit-overflow-scrolling: touch) {
+        background-attachment: scroll;
     }
-    > div {
-        > h2 {
-            @extend .card-title;
-            color: map-get($map: $colores, $key: title );
+    @media (max-width: 480px) {
+        height: 30rem;
+    }
+    &.img-uno {
+        background-image: url("../img/03-bio/mariana-bio-01-recorte.jpg")
+    }
+    
+    &.img-dos {
+        background-image: url("../img/03-bio/mari-y-juan-recorte.jpg")
+    }
+    
+    &.img-tres {
+        background-image: url("../img/03-bio/florecer-recorte.jpg")
+    }
+
+    .texto-interior {
+        .bio {
+            @extend .bio-map;
+            color: map-get($map: $colores, $key:title);
+            @media (max-width: 480px) {
+                font-size: 2rem;
+            }    
         }
-        > p {
-            @extend .card-text;
-            color: map-get($map: $colores, $key: texto );
-            > small {
-                @extend .text-sign;
-                color: map-get($map: $colores, $key: sign );
-            }           
-        }  
+        .nombre {
+            @extend .nombre-map;
+            color: map-get($map: $colores, $key:name);
+            @media (max-width: 480px) {
+                font-size: 2rem;
+            }      
+        }
+    }
+}
+
+.texto {
+    @extend .texto-map;
+    background-color: $TColorLightGrey;
+    p {
+        @extend .p-map;
+        @media (max-width: 480px) {
+            font-size: 0.8rem;
+        }
     }
 }

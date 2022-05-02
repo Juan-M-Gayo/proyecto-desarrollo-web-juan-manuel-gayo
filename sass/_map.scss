@@ -1,36 +1,49 @@
 // map
 $colores: (
     title: $ColorMagenta,
-    texto: $ColorGrey,
-    sign: $ColorLightBlue,
+    name: $ColorLightBlue,
 );
 
 // extend
-.card {
-    margin: 1.25rem;
-    border-radius: 1.375rem;
-    padding-bottom: 0.1rem;
+.parallax-map {
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size:  cover;
+	height: 50rem;
+    width: 100%;
+	max-width: 100%;
+	position: relative;
+    overflow: hidden;
 }
 
-.card-img {
-    border-radius: 1.375rem;
-    border-bottom-left-radius: 0;
-    border-bottom-right-radius: 0;
+.bio-map {
+    font-size: 3rem;
+    font-weight: bold;
+    left: 10%;
+    position: absolute;
+    text-align: center;
+    top: 50%;
+    width: 80%;
 }
 
-.card-title {
-    margin-top: 1.5rem;
-    font-size: 2.5rem;
+.nombre-map {
+    font-size: 3rem;
+    font-weight: bold;
+    left: 10%;
+    position: absolute;
+    text-align: center;
+    top: 50%;
+    width: 80%;  
+}
+
+.texto-map {
+	padding: 2rem 3rem 1rem 3rem;
     text-align: center;
 }
 
-.card-text {
-    margin: 0 1rem 0.5rem 1rem;
-    font-weight: 100;
-    text-align: center;
-    line-height: 2.5rem;
-}
-
-.text-sign {
-    font-size: 1.2rem;
+.p-map {
+    font-size: 1rem;
+    font-weight: bold;
+    margin: 0 0 1rem 0;
 }

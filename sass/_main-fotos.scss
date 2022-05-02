@@ -1,28 +1,32 @@
-// css línea 248 //
-/* ESPECIFICO PARA PÁGINAS DE FOTOS (html línea 100) */
+/* ESPECIFICO PARA PÁGINAS DE FOTOS */
 @import "mixin";
 
 .carousel {
-    margin-top: -3.75rem;
     &-item {
         img {
+            display: block;
             height: 100vh;
+            width: 100%;
             object-fit: cover;
         }
         h2 {
             @include sub ($TColorLightBlue);
         }
-        .sub--coberturas {
+        .sub-coberturas {
             @include sub ($TColorMagenta);
         }
         .bc-coberturas {
+            margin-right: 0.5rem;
+            padding: 0 0.7rem 0.1rem 0.7rem;
+            background-color: $TColorLightBlue;
             text-decoration: none;
+            border-radius: 2rem;
             color: $ColorWhite;
         }    
     }
     &-control-prev {
-        top: 10%;
-        bottom: 10%;
+        top: 20%;
+        bottom: 20%;
         .bi-chevron-left {
             @include arrow ($ColorMagenta);
         }
@@ -31,8 +35,8 @@
         }        
     }
     &-control-next {
-        top: 10%;
-        bottom: 10%;
+        top: 20%;
+        bottom: 20%;
         .bi-chevron-right {
             @include arrow ($ColorMagenta);
         }

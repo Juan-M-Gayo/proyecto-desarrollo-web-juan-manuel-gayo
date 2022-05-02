@@ -1,0 +1,134 @@
+/*  ESPECIFICO PARA PÁGINA INDEX */
+.container-index {
+    display: flex;
+    position: absolute;
+    min-height: 100vh;
+    /* mobile viewport bug fix */
+    min-height: -webkit-fill-available;
+    width: 100%;
+    flex-flow: column;
+    align-items: center;
+    justify-content: space-between;
+    color: #f0f2f4ed;
+    h1 {
+        margin: -0.2rem;
+        padding: 0.6rem 1rem 0.3rem 1.4rem;
+        font-family: 'Josefin Sans', sans-serif;
+        font-size: 1.5rem;
+        letter-spacing: 0.5rem;
+        background: $TColorLightBlue;
+        border-bottom-right-radius: 1.5rem;
+        border-bottom-left-radius: 1.5rem;
+        cursor: default;
+        @media (max-width: 768px) {
+            font-size: 1.2rem;
+            line-height: 0.32rem;
+            padding: 1rem 1rem 0.8rem 1.5rem;
+            border-bottom-right-radius: 1.2rem;
+            border-bottom-left-radius: 1.2rem;    
+        }
+        @media (max-width: 480px) {
+            line-height: 0.26rem;
+            padding: 1.2rem 0.2rem 0.8rem 0.8rem;
+            border-bottom-right-radius: 1rem;
+            border-bottom-left-radius: 1rem;    
+        }
+        @media (max-width: 380px) {
+            width: 11rem;
+            text-align: center;
+            line-height: 1.4rem;
+            padding: 0.5rem 0.2rem 0.2rem 0.7rem;
+            border-bottom-right-radius: 1rem;
+            border-bottom-left-radius: 1rem;    
+        }
+    }
+    .enter {
+        font-family: 'Josefin Sans', sans-serif;
+        text-align: center;
+        .btn {
+            margin-top: 0.5rem;
+            padding: 0.875rem 0.875rem 0.6875rem 1.25rem;
+            font-size: 0.8rem;
+            letter-spacing: 0.3rem;
+            border-width: 0.15rem;
+            border-radius: 0;
+            @media (max-width: 768px) {
+                margin-bottom: 0.5rem;
+            }        
+        }
+        h2 {
+            font-size: 7.5rem;
+            line-height: 7rem;
+            cursor: default;
+            @media (max-width: 768px) {
+                font-size: 6rem;
+                line-height: 5.6rem;
+            }        
+            @media (max-width: 480px) {
+                display: none;
+            }        
+        }
+        .alternativo {
+            height: 8.125rem;
+            display: none;
+            @media (max-width: 480px) {
+                display: block;
+                font-size: 7.5rem;
+                line-height: 10rem;
+            }        
+        }
+        h3 {
+            margin-left: 24.7rem;
+            line-height: 0;
+            cursor: default;
+            @media (max-width: 768px) {
+                font-size: 1.4rem;
+                margin-left: 19.76rem;
+            }        
+            @media (max-width: 480px) {
+                font-size: 1.4rem;
+                margin-left: 0;
+            }        
+        }
+    }
+    .network-container {
+        display: flex;
+        margin-bottom: 1rem;
+        padding: 0.5rem 0.6rem 0.2rem 1.1rem;
+        background: $TColorMagenta;
+        border-radius: 1.5rem;
+        @media (max-width: 1024px) {
+            padding-bottom: 0.3rem;
+            }        
+        h2 {
+            margin-bottom: 0.2rem;
+            font-family: 'Josefin Sans', sans-serif;
+            font-size: 1.4rem;
+            letter-spacing: 0.3rem;
+            cursor: default;
+            @media (max-width: 768px) {
+                padding-top: 0.05rem;
+                font-size: 1.12rem;
+                letter-spacing: 0.24;
+            }        
+        }
+        a .bi {
+            margin: 0.5rem;
+            font-size: 1.2rem;
+            line-height: 1.7rem;
+            color: #f0f2f4ed;
+            @media (max-width: 768px) {
+                margin: 0.4rem;
+                font-size: 0.96rem;
+                line-height: 1.2rem;
+            }        
+        }
+        a .bi:hover {
+            color: $ColorGrey;
+        }   
+    }
+}
+.carousel-index {
+    position: relative;
+    z-index: -100;
+}
