@@ -5,29 +5,44 @@
     padding: 0.3rem 1rem 0.3rem 1rem;
     background-color: $bg;
     font-size: 1.3rem;
-    color: $ColorWhite;
+    color: $colorWhite;
     border-radius: 0 1.5625rem 1.5625rem 0;
     animation-delay: 0.9s;
-    @media (max-width: 1024px) {
+    @media (max-width: 1023px) {
         margin-right: 1rem;
-        margin-bottom: 3.5rem;
+        margin-bottom: 6rem;
         font-size: 0.96rem;
     }
-     /* CSS specific to iOS devices */ 
+    @media (max-width: 768px) {
+        margin-bottom: 3.5rem;
+        }
+    @media (max-width: 650px) {
+        margin-bottom: 6rem;
+        }
+    @media (max-width: 480px) {
+        margin-bottom: 3.5rem;
+        }    
+ /* CSS specific to iOS devices */ 
     @supports (-webkit-touch-callout: none) {
         margin-bottom: 5rem;
+        @media (max-width: 992px) {
+            margin-bottom: 3.5rem;
+        }            
+        @media (max-width: 480px) {
+            margin-bottom: 5rem;
+        }            
     }
 }
 
 @mixin sub-top ($bg) {
     position: absolute;
-    text-align: center;
     top: 1rem;
-    width: 100%;
     padding: 2rem;
+    width: 100%;
     background-color: $bg;
     font-size: 1.3rem;
-    color: $ColorWhite;
+    text-align: center;
+    color: $colorWhite;
     animation-delay: 0.9s;
     @media (max-width: 992px) {
         margin-top: -0.5rem;

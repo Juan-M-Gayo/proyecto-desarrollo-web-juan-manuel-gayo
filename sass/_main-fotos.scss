@@ -10,38 +10,38 @@
             object-fit: cover;
         }
         h2 {
-            @include sub ($TColorLightBlue);
+            @include sub ($transparentColorLightBlue);
         }
         .sub-coberturas {
-            @include sub ($TColorMagenta);
+            @include sub ($transparentColorMagenta);
         }
         .bc-coberturas {
             margin-right: 0.5rem;
             padding: 0 0.7rem 0.1rem 0.7rem;
-            background-color: $TColorLightBlue;
+            background-color: $transparentColorLightBlue;
             text-decoration: none;
             border-radius: 2rem;
-            color: $ColorWhite;
+            color: $colorWhite;
         }    
     }
     &-control-prev {
-        top: 20%;
-        bottom: 20%;
+        top: 50%;
+        bottom: 50%;
         .bi-chevron-left {
-            @include arrow ($ColorMagenta);
+            @include arrow ($colorMagenta);
         }
         .arrow-coberturas {
-            @include arrow ($ColorLightBlue);
+            @include arrow ($colorLightBlue);
         }        
     }
     &-control-next {
-        top: 20%;
-        bottom: 20%;
+        top: 50%;
+        bottom: 50%;
         .bi-chevron-right {
-            @include arrow ($ColorMagenta);
+            @include arrow ($colorMagenta);
         }
         .arrow-coberturas {
-            @include arrow ($ColorLightBlue);
+            @include arrow ($colorLightBlue);
         }        
     }        
 }

@@ -41,7 +41,7 @@
 
 .texto {
     @extend .texto-map;
-    background-color: $TColorLightGrey;
+    background-color: $transparentColorLightGrey;
     p {
         @extend .p-map;
         @media (max-width: 480px) {

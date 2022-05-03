@@ -1,40 +1,40 @@
 // map
 $colores: (
-    title: $ColorMagenta,
-    name: $ColorLightBlue,
+    title: $colorMagenta,
+    name: $colorLightBlue,
 );
 
 // extend
 .parallax-map {
+	position: relative;
+	height: 50rem;
+    width: 100%;
+	max-width: 100%;
+    overflow: hidden;
 	background-attachment: fixed;
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size:  cover;
-	height: 50rem;
-    width: 100%;
-	max-width: 100%;
-	position: relative;
-    overflow: hidden;
 }
 
 .bio-map {
+    position: absolute;
+    top: 50%;
+    left: 10%;
+    width: 80%;
     font-size: 3rem;
     font-weight: bold;
-    left: 10%;
-    position: absolute;
     text-align: center;
-    top: 50%;
-    width: 80%;
 }
 
 .nombre-map {
+    position: absolute;
+    top: 50%;
+    left: 10%;
+    width: 80%;  
     font-size: 3rem;
     font-weight: bold;
-    left: 10%;
-    position: absolute;
     text-align: center;
-    top: 50%;
-    width: 80%;  
 }
 
 .texto-map {
@@ -43,7 +43,7 @@ $colores: (
 }
 
 .p-map {
+    margin: 0 0 1rem 0;
     font-size: 1rem;
     font-weight: bold;
-    margin: 0 0 1rem 0;
 }
