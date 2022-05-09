@@ -5,7 +5,7 @@ $colores: (
 );
 
 // extend
-.parallax-map {
+.bio-background-map {
 	position: relative;
 	height: 50rem;
     width: 100%;
@@ -14,7 +14,7 @@ $colores: (
 	background-attachment: fixed;
 	background-position: center;
 	background-repeat: no-repeat;
-	background-size:  cover;
+	background-size: cover;
 }
 
 .bio-map {
@@ -23,27 +23,36 @@ $colores: (
     left: 10%;
     width: 80%;
     font-size: 3rem;
-    font-weight: bold;
     text-align: center;
 }
 
 .nombre-map {
     position: absolute;
-    top: 50%;
+    top: 45%;
     left: 10%;
     width: 80%;  
-    font-size: 3rem;
-    font-weight: bold;
     text-align: center;
+    font-size: 3rem;
+    line-height: 4rem;
+    @media (max-width: 992px) {
+        top: 35%;
+    }
+    @media (max-width: 650px) {
+        top: 25%;
+    }
+    @media (max-width: 480px) {
+        top: 30%;
+        line-height: 2.5rem;
+    }
 }
 
 .texto-map {
-	padding: 2rem 3rem 1rem 3rem;
+	padding: 1rem 2rem 2rem 2rem;
     text-align: center;
 }
 
 .p-map {
-    margin: 0 0 1rem 0;
+    margin: 2rem 0 1rem 0;
     font-size: 1rem;
     font-weight: bold;
 }

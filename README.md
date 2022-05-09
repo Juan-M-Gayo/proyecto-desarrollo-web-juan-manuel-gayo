@@ -338,3 +338,88 @@ Todo lo relacionado con la ortografía, se corregirá para la entrega final del 
 - Se chequea el correcto funcionamiento de todas las secciones y su estructura en general. También se corrobora que el proyecto sigue funcionando como Full Responsive y que no presenta errores en ninguna de sus medidas.
 - Se corrige escritura dentro del archivo README.
 - Se sube todo el proyecto a Github y tambien 000webhost.
+
+
+
+#
+- * -  ( Versión 0.6 - Entrega Final )
+#
+ 
+ 
+ 
+# CARPETA JS
+ 
+- Se crea carpeta "contacto.js"
+- Se escribe el código para generar cartel al enviar o intentar enviar un mensaje a través de la página "contacto.html"
+ 
+# HTML
+ 
+## Común a todas las páginas
+ 
+- Los </script> de bootstrap se pasan del cierre del </body> al </head>.
+- Se realizan pequeñas correcciones y modificaciones.
+ 
+## Específico para _contacto.html
+ 
+- Se agrega, al cierre del body, un </script> vinculando el archivo "contacto.js" a la página "contacto.html"
+ 
+# SASS
+ 
+## Específico para _vars.scss
+ 
+- Se agregan más colores.
+ 
+## Específico para _reset.scss
+ 
+- Se modifica el ancho de la barra de scroll.
+ 
+## Específico para _mixin.scss
+ 
+- Se introducen ajustes y modificaciones dentro de ".sub" y ".sub-top".
+ 
+## Específico para _maps.scss
+ 
+- Se introducen ajustes y modificaciones dentro de ".bio-background-map", ".nombre-map", ".texto-map" y ".p-map".
+ 
+## Especifico para _main-index.scss
+ 
+- Se pasa todo el contenido dentro de "#main-index".
+- Se modifica ubicación del botón de entrada y se ajustan animaciones.
+ 
+## Específico para _main-fotos.scss
+ 
+- Se pasa todo el contenido dentro de "#main-fotos".
+ 
+## Específico para _header.scss
+ 
+- Se introducen ajustes y modificaciones dentro de ".navbar-brand". También se agrega media query.
+- Se agrega media query dentro de ".navbar-toggler-icon".
+- Se introducen ajustes y modificaciones dentro de ".navbar-collapse". También se agregan media queries.
+- Se realizan pequeños ajustes en general.
+ 
+## Específico para _default.scss
+ 
+- Se agrega font-family.
+- ".disclaimer" existe solamente para eliminar el cartel que agrega "000webhost" al pie de la página.
+ 
+## Específico para _contacto.scss
+ 
+- Se agregan "#contacto-html", "#contacto-body", ".form-control:focus" y "@keyframes buttons".
+- Se pasa todo el contenido dentro de "#main-contacto".
+ 
+## Específico para _coberturas.scss
+ 
+- Se agrega "#coberturas-body".
+- Se pasa todo el contenido dentro de "#main-coberturas".
+ 
+## Específico para _bio.scss
+ 
+- Se agregan "#bio-html" y "#bio-body".
+- Se pasa todo el contenido dentro de "#main-bio" y se realizan pequeños ajustes.
+ 
+# EXTRA
+ 
+- Se chequea el correcto funcionamiento de todas las secciones y su estructura en general. También se corrobora que el proyecto sigue funcionando como Full Responsive y que no presenta errores en ninguna de sus medidas. Esto se realiza mediante inspección en navegadores y en distintos dispositivos: celulares, tablets y pcs.
+- Se valida, en W3C, todo el sitio web (html y css). Todos los html (https://validator.w3.org/#validate_by_uri+with_options) y el css (https://jigsaw.w3.org/css-validator/) se encuentran sin errores.
+- Se pasa con éxito la prueba de optimización para moviles (https://search.google.com/test/mobile-friendly)
+- Se sube todo el proyecto a Github y también 000webhost.

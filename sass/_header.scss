@@ -8,14 +8,12 @@
     @media (max-width: 992px) {
         height: 2.4rem;
     }
-    &.coberturas-nav, &.bio-nav, &.contacto-nav {
-        background-color: $colorLightGrey;
-    }
     & &-brand h1 {
         margin: 0 0.5rem 0 0.5rem;
         font-size: 1.625rem;
+        font-weight: 600;
         letter-spacing: 0.5rem;
-        color: $colorBlack;
+        color: $colorDarkGrey;
         @media (max-width: 992px) {
             margin-top: -0.3rem;
             margin-right: 0;
@@ -27,9 +25,13 @@
             font-size: 1rem;
             letter-spacing: 0.256rem;
         }
+        @media (max-width: 320px) {
+            margin-top: -0.25rem;
+            font-size: 0.85rem;
+            letter-spacing: 0.2rem;
+        }
         &:hover {
-            font-weight: bold;
-            color: $colorGrey;
+            color: $colorLightBlue;
         } 
     }
     & &-toggler {
@@ -49,13 +51,24 @@
         @media (max-width: 360px) {
             width: 1.04rem;
         }
+        @media (max-width: 320px) {
+            width: 0.9rem;
+        }
     }
     & &-collapse {
         @media (max-width: 992px) {
+            height: 75vh;
             margin: 0.14rem -0.75rem 0 -1rem;
             padding: 1rem;
+            overflow-y: auto;
             background-color: $colorWhite;
             border-bottom: 0.5rem solid $transparentColorLightGrey;
+        }
+        @media (max-width: 480px) {
+            height: 87vh;
+        }
+        @media (max-width: 320px) {
+            height: 83vh;
         }
         .navbar-nav {
             .nav-item {
@@ -65,7 +78,7 @@
                     padding: 0;
                     font-weight: bold;
                     letter-spacing: 0.1875rem;
-                    color: $colorGrey;
+                    color: $colorDarkGrey;
                     @media (max-width: 992px) {
                         font-size: 0.8rem;
                         left: -0.5rem;
@@ -94,20 +107,20 @@
                     &:focus,
                     &:active {
                         outline: none !important;
-                    }       
+                    }
                 }
                 .dropdown-menu {
+                    margin: -0.3rem 0 0.5rem 0;
                     background-color: $transparentColorLightGrey;
                     border: none;
-                    margin: -0.3rem 0 0.5rem 0;
                     .dropdown-item {
                         position: relative;
-                        width: min-content;
                         margin: 1rem 1.5rem;
+                        width: min-content;
                         padding: 0;                
                         font-weight: bold;
                         letter-spacing: 0.1875rem;
-                        color: $colorGrey;
+                        color: $colorDarkGrey;
                         @media (max-width: 992px) {
                             font-size: 0.8rem;
                         }         
@@ -136,7 +149,7 @@
                             transform: scaleX(1);
                         }
                         &:active {
-                            color: $colorGrey;
+                            color: $colorDarkGrey;
                         }                                      
                     }
                     .inactive--dropdwn-link {
@@ -153,12 +166,13 @@
                 }
             }
             .inactive-link {
-                margin: 0.5rem;
+                margin: 0.5rem 1rem;
                 font-weight: bold;
                 letter-spacing: 0.1875rem;
                 color: $colorMagenta;
                 cursor: default;
                 @media (max-width: 992px) {
+                    margin: 0.5rem;
                     font-size: 0.8rem;
                 } 
             }            

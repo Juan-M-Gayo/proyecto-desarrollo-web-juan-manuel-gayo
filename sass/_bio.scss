@@ -1,51 +1,79 @@
 /* ESPECIFICO PARA PÁGINA BIO */
 @import "map";
 
-.parallax {
-    @extend .parallax-map;
-    @supports (-webkit-overflow-scrolling: touch) {
-        background-attachment: scroll;
-    }
-    @media (max-width: 480px) {
-        height: 30rem;
-    }
-    &.img-uno {
-        background-image: url("../img/03-bio/mariana-bio-01-recorte.jpg")
-    }
-    
-    &.img-dos {
-        background-image: url("../img/03-bio/mari-y-juan-recorte.jpg")
-    }
-    
-    &.img-tres {
-        background-image: url("../img/03-bio/florecer-recorte.jpg")
-    }
-
-    .texto-interior {
-        .bio {
-            @extend .bio-map;
-            color: map-get($map: $colores, $key:title);
-            @media (max-width: 480px) {
-                font-size: 2rem;
-            }    
-        }
-        .nombre {
-            @extend .nombre-map;
-            color: map-get($map: $colores, $key:name);
-            @media (max-width: 480px) {
-                font-size: 2rem;
-            }      
-        }
-    }
+#bio-html {
+    width: 100%;
+    overflow: hidden;
 }
 
-.texto {
-    @extend .texto-map;
-    background-color: $transparentColorLightGrey;
-    p {
-        @extend .p-map;
-        @media (max-width: 480px) {
-            font-size: 0.8rem;
+#bio-body {
+    position: fixed;
+    height: 100%;
+    overflow-y: scroll;
+}
+
+#main-bio {
+    .content {
+        .bio-background {
+            @extend .bio-background-map;
+            @supports (-webkit-overflow-scrolling: touch) {
+                background-attachment: scroll;
+            }
+            @media (max-width: 1024px) {
+                height: 35rem;
+            }
+            @media (max-width: 992px) {
+                height: 20rem;
+            }
+            @media (max-width: 650px) {
+                height: 15rem;
+            }
+            @media (max-width: 380px) {
+                height: 10rem;
+            }
+            &.img-uno {
+                background-image: url("../img/03-bio/mariana-bio-01.jpg");
+                @media (max-width: 992px) {
+                    background-position: top;
+                    background-size: 100%;
+                }
+            }
+            &.img-dos {
+                background-image: url("../img/03-bio/florecer-recorte.jpg");
+                @media (max-width: 992px) {
+                    background-position: bottom;
+                    background-size: 100%;
+                    overflow: hidden;
+                }
+            }
+            .texto-interior {
+                .bio {
+                    @extend .bio-map;
+                    color: map-get($map: $colores, $key:title);
+                    @media (max-width: 480px) {
+                        font-size: 2rem;
+                    }    
+                }
+                .nombre {
+                    @extend .nombre-map;
+                    color: map-get($map: $colores, $key:name);
+                    @media (max-width: 480px) {
+                        font-size: 2rem;
+                    }      
+                }
+            }
+        }
+        .texto {
+            @extend .texto-map;
+            background-color: $transparentColorLightGrey;
+            letter-spacing: 0.1rem;
+            color: $colorDarkGrey;
+            p {
+                @extend .p-map;
+                @media (max-width: 480px) {
+                    font-size: 0.8rem;
+                }
+            }
         }
     }
 }

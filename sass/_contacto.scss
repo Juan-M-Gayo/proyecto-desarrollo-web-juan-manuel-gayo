@@ -1,34 +1,97 @@
 /* ESPECIFICO PARA PÁGINA CONTACTO */
-#contact {
-    background-image: url("../img/04-contacto/fondo-contacto-04.jpg");
+#contacto-html {
+    width: 100%;
+    overflow: hidden;
 }
-.contact-container {
-    margin: 3.125rem;
-    h2 {
-        margin-top: 6rem;
-        margin-bottom: 4rem;
-        color: $colorWhite;
-        text-align: center;
+
+#contacto-body {
+    background-image: url("../img/04-contacto/fondo-contacto-04.jpg");
+    background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+    @media (max-width: 992px) {
+        position: fixed;
+        height: 100%;
+        overflow-y: scroll;
     }
-    form {
-        padding: 0 1.25rem 1.25rem 1.25rem;
-        background-color: $transparentColorLightBlue;
-        text-align: center;
-        border-radius: 1.375rem;
-        .form-label {
-            color: $colorWhite;
+}
+
+#main-contacto {
+    .contacto-container {
+        margin: 3.125rem;
+        h2 {
+            margin-top: 6rem;
+            margin-bottom: 4rem;
+            color: $colorLightBlue;
+            text-align: center;
         }
-        .submit-btn {
-            margin-bottom: 1.5rem;
-            .btn-secondary {
-                width: 6.25rem;
-                border: none;
-                background-color: $colorMagenta;
-                border-radius: 1.25rem;
-                &:hover {
-                    background-color: $colorGrey;
-                }
+        form {
+            padding: 0 1.25rem 1.25rem 1.25rem;
+            background-color: $transparentColorDarkGrey;
+            text-align: center;
+            border-radius: 1.375rem;
+            .form-label {
+                color: $colorWhite;
             }
-        }        
-    }  
+            .form-control:focus {
+                border-color: $colorDarkGrey;
+                box-shadow: 0 0 0 0.25rem rgba(32, 32, 33, 0.25);
+            }
+            .submit-btn {
+                margin-bottom: 0;
+                .btn-secondary {
+                    width: 6.25rem;
+                    border: none;
+                    background-color: $colorMagenta;
+                    border-radius: 1.25rem;
+                    &:hover {
+                        background-color: $colorDarkGrey;
+                    }
+                }
+            } 
+            .message {
+                display: flex;
+                position: relative;
+                margin-bottom: 2rem;
+                width: 100%;
+                justify-content: center;
+                .success {
+                    display: none;
+                    position: absolute;
+                    padding: 0.3rem 1rem 0.25rem 1rem;
+                    background-color: $colorWhite;
+                    font-size: 1rem;
+                    font-weight: 600;
+                    color: green;
+                    border-radius: 1.5625rem;
+                    animation: buttons .3s linear;
+                }
+                .danger {
+                    display: none;    
+                    position: absolute;
+                    padding: 0.3rem 1rem 0.25rem 1rem;
+                    background-color: $colorWhite;
+                    font-size: 1rem;
+                    font-weight: 600;
+                    color: red;
+                    border-radius: 1.5625rem;
+                    transition: .3s;
+                    animation: buttons .3s linear;
+                }
+            }        
+        }  
+    }
+}
+
+@keyframes buttons {
+    0% {
+        transform: scale(0.1);
+    }
+    50% {
+        transform: scale(0.5);
+    }
+    100% {
+        transform: scale(1);
+    } 
 }

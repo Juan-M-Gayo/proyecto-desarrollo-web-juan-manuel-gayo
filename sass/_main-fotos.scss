@@ -1,47 +1,60 @@
 /* ESPECIFICO PARA PÁGINAS DE FOTOS */
 @import "mixin";
 
-.carousel {
-    &-item {
-        img {
-            display: block;
-            height: 100vh;
-            width: 100%;
-            object-fit: cover;
+#main-fotos {
+    .carousel {
+        &-item {
+            img {
+                display: block;
+                height: 100vh;
+                width: 100%;
+                object-fit: cover;
+            }
+            h2 {
+                @include sub ($transparentColorLightBlue);
+            }
+            .sub-coberturas {
+                @include sub ($transparentColorMagenta);
+            }
+            .bc-coberturas {
+                @include sub ($transparentColorLightBlue);
+                bottom: 4rem;
+                padding-top: 0.15rem;
+                padding-bottom: 0.15rem;
+                text-decoration: none;
+                @media (max-width: 1023px) {
+                    margin-bottom: 5rem;
+                }
+                @media (max-width: 768px) {
+                    margin-bottom: 2.5rem;
+                }
+                @media (max-width: 650px) {
+                    margin-bottom: 5rem;
+                }
+                @media (max-width: 480px) {
+                    margin-bottom: 2.5rem;
+                }    
+            }    
         }
-        h2 {
-            @include sub ($transparentColorLightBlue);
+        &-control-prev {
+            top: 50%;
+            bottom: 50%;
+            .bi-chevron-left {
+                @include arrow ($colorMagenta);
+            }
+            .arrow-coberturas {
+                @include arrow ($colorLightBlue);
+            }        
         }
-        .sub-coberturas {
-            @include sub ($transparentColorMagenta);
-        }
-        .bc-coberturas {
-            margin-right: 0.5rem;
-            padding: 0 0.7rem 0.1rem 0.7rem;
-            background-color: $transparentColorLightBlue;
-            text-decoration: none;
-            border-radius: 2rem;
-            color: $colorWhite;
-        }    
-    }
-    &-control-prev {
-        top: 50%;
-        bottom: 50%;
-        .bi-chevron-left {
-            @include arrow ($colorMagenta);
-        }
-        .arrow-coberturas {
-            @include arrow ($colorLightBlue);
+        &-control-next {
+            top: 50%;
+            bottom: 50%;
+            .bi-chevron-right {
+                @include arrow ($colorMagenta);
+            }
+            .arrow-coberturas {
+                @include arrow ($colorLightBlue);
+            }        
         }        
     }
-    &-control-next {
-        top: 50%;
-        bottom: 50%;
-        .bi-chevron-right {
-            @include arrow ($colorMagenta);
-        }
-        .arrow-coberturas {
-            @include arrow ($colorLightBlue);
-        }        
-    }        
 }

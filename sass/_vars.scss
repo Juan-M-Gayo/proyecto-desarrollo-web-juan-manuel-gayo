@@ -2,11 +2,15 @@
 $colorBlack: #000000;
 $colorWhite: #ffffff;
 $colorLightGrey: #f5f5f5;
-$colorGrey: #7e7e7e;
+$colorMediumGrey: #b7b4b4;
+$colorDarkGrey: #4f4f4f;
 $colorLightBlue: #2498e6;
 $colorMagenta: #d30b5e;
 
+$transparentColorBlack: rgba(0, 0, 0, 0.9);
+$transparentColorWhite: rgba(255, 255, 255, 0.9);
 $transparentColorLightGrey: rgba(245, 245, 245, 0.9);
-$transparentColorDarkGrey: rgba(125, 125, 125, 0.7);
+$transparentColorMediumGrey: rgba(175, 173, 173, 0.7);
+$transparentColorDarkGrey: rgba(125, 125, 125, 0.5);
 $transparentColorLightBlue: rgba(36, 152, 230, 0.7);
 $transparentColorMagenta: rgba(211, 11, 94, 0.7);
