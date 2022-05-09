@@ -89,12 +89,12 @@
 
             <div class="network-container">
                <div class="network">
-                  <a href="https://www.instagram.com/" target="_blank">
+                  <a href="https://instagram.com/marianasequeirafotos?igshid=YmMyMTA2M2Y=" target="_blank">
                      <img src="../img/01-redes-sociales/instagram.png" alt="ícono de la red social instagram">
                   </a>
                </div>
                <div class="network">
-                  <a href="https://ar.pinterest.com/" target="_blank">
+                  <a href="https://pin.it/5fsTIXM" target="_blank">
                      <img src="../img/01-redes-sociales/pinterest.png" alt="ícono de la red social pinteres">
                   </a>
                </div>
@@ -108,26 +108,26 @@
    <main id="main-contacto">
       <div class="contacto-container mt-5">
          <h2>CONTACTO</h2>
-         <form class="row g-3" onsubmit="return false">
+         <form class="row g-3" method="post" action="../php/contact-form-process.php" target="dummyframe">
             <div class="firstname col-md-6 mt-5">
                <label for="firs-tname" class="form-label">Nombre</label>
-               <input type="text" class="form-control" id="firstname" required>
+               <input type="text" class="form-control" id="firstname" name="firstname" required>
             </div>
             <div class="lastname col-md-6 mt-5">
                <label for="last-name" class="form-label">Apellido</label>
-               <input type="text" class="form-control" id="lastname" required>
+               <input type="text" class="form-control" id="lastname" name="lastname" required>
             </div>
             <div class="emailinfo col-md-8 mt-5">
                <label for="email-info" class="form-label">E-mail</label>
-               <input type="email" class="form-control" id="emailinfo" required>
+               <input type="email" class="form-control" id="emailinfo" name="emailinfo" required>
             </div>
             <div class="col-md-4 mt-5">
                <label for="phonenumber" class="form-label">Teléfono (opcional)</label>
-               <input type="text" class="form-control" id="phonenumber" placeholder="+54 (9) 11 xxxx-xxxx">
+               <input type="text" class="form-control" id="phonenumber" name="phonenumber" placeholder="+54 (9) 11 xxxx-xxxx">
             </div>
             <div class="comments col-md-12 mt-5">
                <label for="comments" class="form-label">Comentarios</label>
-               <textarea class="form-control" id="comments" rows="9"></textarea required>
+               <textarea class="form-control" id="comments" rows="9" name="comments" required></textarea>
             </div>
             <div class="submit-btn col-md-12 mt-5">
                <button type="submit" class="btn btn-secondary" id="send" onclick="message()">Enviar</button>
@@ -142,6 +142,7 @@
             </div>
          </form>
       </div>
+      <iframe name="dummyframe" id="dummyframe" style="display: none;"></iframe>
    </main>
 
    <script src="../js/contacto.js"></script>

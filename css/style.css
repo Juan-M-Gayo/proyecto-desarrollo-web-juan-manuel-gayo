@@ -1090,7 +1090,7 @@ html body {
   background-size: cover;
 }
 
-@media (max-width: 992px) {
+@media (max-width: 1400px) {
   #contacto-body {
     position: fixed;
     height: 100%;
